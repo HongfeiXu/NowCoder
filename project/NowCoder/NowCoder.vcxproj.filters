@@ -13,32 +13,50 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="PushBox.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HorseRace.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="StringCode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MaxAccumulate.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="PushBox_2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <Filter Include="头文件\雷火盘古2018">
+      <UniqueIdentifier>{26f7bd3e-0c37-4d1a-8cba-a145b656042c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\雷火盘古2019">
+      <UniqueIdentifier>{8c8a90bf-3182-4e9d-9dee-2d44df139bdb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md">
       <Filter>资源文件</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\HorseRace.h">
+      <Filter>头文件\雷火盘古2018</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MaxAccumulate.h">
+      <Filter>头文件\雷火盘古2018</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PushBox.h">
+      <Filter>头文件\雷火盘古2018</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PushBox_2.h">
+      <Filter>头文件\雷火盘古2018</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StringCode.h">
+      <Filter>头文件\雷火盘古2018</Filter>
+    </ClInclude>
+    <ClInclude Include="src\打怪兽.h">
+      <Filter>头文件\雷火盘古2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\等腰三角形.h">
+      <Filter>头文件\雷火盘古2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\放小球.h">
+      <Filter>头文件\雷火盘古2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\字符串计算.h">
+      <Filter>头文件\雷火盘古2019</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

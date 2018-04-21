@@ -140,7 +140,7 @@ void solver()
 	cout << -1 << endl;
 	return;
 }
-int main()
+void driver()
 {
 	int K;
 	cin >> K;
@@ -148,5 +148,4 @@ int main()
 	{
 		solver();
 	}
-	return 0;
 }

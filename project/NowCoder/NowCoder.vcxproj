@@ -142,17 +142,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HorseRace.h" />
-    <ClInclude Include="MaxAccumulate.h" />
-    <ClInclude Include="PushBox.h" />
-    <ClInclude Include="PushBox_2.h" />
-    <ClInclude Include="StringCode.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ReadMe.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\HorseRace.h" />
+    <ClInclude Include="src\MaxAccumulate.h" />
+    <ClInclude Include="src\PushBox.h" />
+    <ClInclude Include="src\PushBox_2.h" />
+    <ClInclude Include="src\StringCode.h" />
+    <ClInclude Include="src\字符串计算.h" />
+    <ClInclude Include="src\打怪兽.h" />
+    <ClInclude Include="src\放小球.h" />
+    <ClInclude Include="src\等腰三角形.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
