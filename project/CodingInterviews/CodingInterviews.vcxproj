@@ -148,12 +148,14 @@
   <ItemGroup>
     <ClInclude Include="src\CPP_Cast.h" />
     <ClInclude Include="src\FindKthToTail.h" />
+    <ClInclude Include="src\MyList.h" />
     <ClInclude Include="src\SizeOf.h" />
     <ClInclude Include="src\StrToInt.h" />
     <ClInclude Include="src\二叉树中序遍历.h" />
     <ClInclude Include="src\二叉树先序遍历.h" />
     <ClInclude Include="src\二叉树后序遍历.h" />
     <ClInclude Include="src\只能动态分配与只能静态分配.h" />
+    <ClInclude Include="src\面试题25_合并两个有序链表.h" />
     <ClInclude Include="src\手写快排.h" />
     <ClInclude Include="src\智能指针循环引用问题.h" />
     <ClInclude Include="src\菱形继承问题.h" />
@@ -164,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MyList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.md" />

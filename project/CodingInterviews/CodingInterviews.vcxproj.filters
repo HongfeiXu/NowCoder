@@ -19,6 +19,12 @@
     <Filter Include="头文件\C++常见问题">
       <UniqueIdentifier>{ddcc3d29-2b7e-44ab-b7fc-aed8890af18d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Utility">
+      <UniqueIdentifier>{24060e5a-8942-45ab-bc66-426de733e199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utility">
+      <UniqueIdentifier>{982dd97e-bc66-48d5-a6c5-507587fe9040}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\FindKthToTail.h">
@@ -66,10 +72,19 @@
     <ClInclude Include="src\二叉树后序遍历.h">
       <Filter>头文件\C++常见问题</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题25_合并两个有序链表.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyList.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyList.cpp">
+      <Filter>源文件\Utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
