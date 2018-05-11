@@ -6,8 +6,10 @@
 
 题目：合并两个（递增）有序的链表，使得结果链表仍然是有序的。
 
-网易雷火现场面试问到，结果回答的很差。
-重点是第三种递归方法和第四种迭代方法
+网易雷火现场面试问到，结果回答的很差。主要是当时的思路确实不对。
+简单的方法，是把这个合并过程看做每次从当前余下的链表 lhs，rhs 的首节点中取较小的节点链接到已经合并的链表的末尾。
+下面的递归法以及迭代法就是使用这种方法。
+递归法中，每次递归调用会返回剩余节点的头结点。
 
 */
 
@@ -24,74 +26,6 @@
 using namespace std;
 
 // ====================Approach_v1================
-// 迭代法，额外空间O(n)
-class SolutionIterative {
-public:
-	list<int> merge(const list<int>& lhs, const list<int>& rhs)
-	{
-		list<int> result;
-		auto lhs_it = lhs.begin();
-		auto rhs_it = rhs.begin();
-
-		while (lhs_it != lhs.end() && rhs_it != rhs.end())
-		{
-			if (*lhs_it < *rhs_it)
-			{
-				result.push_back(*lhs_it);
-				++lhs_it;
-			}
-			else
-			{
-				result.push_back(*rhs_it);
-				++rhs_it;
-			}
-		}
-		copy(lhs_it, lhs.end(), back_inserter(result));
-		copy(rhs_it, rhs.end(), back_inserter(result));
-		return result;
-	}
-};
-
-// ====================Approach_v2================
-// 递归法，使用迭代器，额外空间O(n)
-class SolutionRecursive {
-public:
-	using IterType = list<int>::const_iterator;
-
-	list<int> merge(const list<int>& lhs, const list<int>& rhs)
-	{
-		list<int> result;
-		combineAux(lhs.begin(), lhs.end(), rhs.begin(), rhs.end(), result);
-		return result;
-	}
-	void combineAux(IterType lhs_b, IterType lhs_e, IterType rhs_b, IterType rhs_e, list<int>& result)
-	{
-		if (lhs_b == lhs_e)
-		{
-			copy(rhs_b, rhs_e, back_inserter(result));
-			return;
-		}
-		if (rhs_b == rhs_e)
-		{
-			copy(lhs_b, lhs_e, back_inserter(result));
-			return;
-		}
-		if (*lhs_b < *rhs_b)
-		{
-			result.push_back(*lhs_b);
-			++lhs_b;
-		}
-		else
-		{
-			result.push_back(*rhs_b);
-			++rhs_b;
-		}
-		combineAux(lhs_b, lhs_e, rhs_b, rhs_e, result);
-		return;
-	}
-};
-
-// ====================Approach_v3================
 // 递归法，使用自定义数据结构ListNode
 class SolutionNice {
 public:
@@ -105,7 +39,7 @@ public:
 
 		// 比较获得剩余节点的头结点
 		ListNode* merge_head = nullptr;
-		if (lhs->value < rhs->value)
+		if (lhs->val < rhs->val)
 		{
 			merge_head = lhs;
 			merge_head->next = merge(lhs->next, rhs);
@@ -120,9 +54,10 @@ public:
 	}
 };
 
-// ====================Approach_v4================
-// 迭代法，使用自定义数据结构ListNode，额外空间复杂度O(1)
-class SolutionBest {
+// ====================Approach_v2================
+// 通过记录合并后链表的最后一个节点，不断的向链表尾端加入当前 lhs、rhs的较小的节点，直到其中一个链表已经遍历完毕。
+// 再将余下的那个链表直接链接到链表尾部
+class SolutionEasy {
 public:
 	ListNode* merge(ListNode* lhs, ListNode* rhs)
 	{
@@ -130,38 +65,40 @@ public:
 			return rhs;
 		if (rhs == nullptr)
 			return lhs;
-		if (lhs->value > rhs->value)
-			swap(lhs, rhs);
-		ListNode* pre = nullptr;
-		ListNode* curr = lhs;
-		ListNode* r_node = rhs;
-		while (r_node != nullptr)
+		ListNode* head = nullptr;	// 记录合并后链表的第一个结点
+		if (lhs->val < rhs->val)
 		{
-			// 寻找 r_node 要插入到 lhs 中的位置（在lhs中找寻第一个比r_node大的节点curr）
-			while (curr != nullptr && r_node->value >= curr->value)
-			{
-				pre = curr;
-				curr = curr->next;
-			}
-
-			// 若当前节点r_node大于所有lhs中余下的节点，则直接将rhs接到lhs的尾部
-			if (curr == nullptr)
-			{
-				pre->next = r_node;
-				break;
-			}
-
-			// 将当前节点r_node插入pre后面，更新pre指针
-			pre->next = r_node;
-			r_node = r_node->next;
-			pre->next->next = curr;
-			pre = pre->next;
+			head = lhs;
+			lhs = lhs->next;
 		}
-		return lhs;
+		else
+		{
+			head = rhs;
+			rhs = rhs->next;
+		}
+		ListNode* pre = head;		// 记录当前合并后链表的最后一个节点
+		while (lhs != nullptr && rhs != nullptr)
+		{
+			if (lhs->val < rhs->val)
+			{
+				pre->next = lhs;	// 添加当前 lhs 和 rhs 中较小的节点到链表末尾
+				pre = lhs;			// Update pre
+				lhs = lhs->next;	// Update lhs
+			}
+			else
+			{
+				pre->next = rhs;
+				pre = rhs;
+				rhs = rhs->next;
+			}
+		}
+		if (lhs == nullptr)
+			pre->next = rhs;
+		else
+			pre->next = lhs;
+		return head;
 	}
 };
-
-
 
 // ====================测试代码================
 
@@ -177,7 +114,7 @@ ListNode* test(const std::string test_name, ListNode* p_head1, ListNode* p_head2
 	cout << "The merged list = \n";
 	// uncomment to test
 	//SolutionNice solu;
-	SolutionBest solu;
+	SolutionEasy solu;
 	ListNode* p_merged_head = solu.merge(p_head1, p_head2);
 	printList(p_merged_head);
 	cout << "\n\n";
@@ -188,7 +125,7 @@ ListNode* test(const std::string test_name, ListNode* p_head1, ListNode* p_head2
 // list2: 2->4->6
 void test1()
 {
-	list<int> l1 { 1,3,5 };
+	list<int>l1 { 1,3,5 };
 	list<int>l2 { 2,4,6 };
 	ListNode* p_head1 = makeList(l1.begin(), l1.end());
 	ListNode* p_head2 = makeList(l2.begin(), l2.end());
@@ -237,26 +174,6 @@ void test4()
 
 void driver()
 {
-	cout << "=============================" << endl;
-	cout << "Using std::list" << endl;
-	list<int> lhs = { 1,3,7,9 };
-	list<int> rhs = { 2,3,3,5,12 };
-	list<int> result;
-
-	SolutionIterative solu1;
-	result = solu1.merge(lhs, rhs);
-	for (auto item : result)
-		cout << item << " ";
-	cout << endl;
-
-	SolutionRecursive solu2;
-	result = solu2.merge(lhs, rhs);
-	for (auto item : result)
-		cout << item << " ";
-	cout << endl;
-
-	cout << "=============================" << endl;
-	cout << "Using user defined list" << endl;
 	test1();
 	test2();
 	test3();

@@ -14,10 +14,26 @@ ListNode* makeList(list<int>::const_iterator b, list<int>::const_iterator e)
 {
 	if (b == e)
 		return nullptr;
-	ListNode* curr = new ListNode;
-	curr->value = *b;
+	ListNode* curr = new ListNode(*b);
 	curr->next = makeList(++b, e);
 	return curr;
+}
+
+ListNode* vectorToMyList(vector<int>::const_iterator b, vector<int>::const_iterator e)
+{
+	if (b == e)
+		return nullptr;
+	ListNode* head = new ListNode(*b);
+	ListNode* pre = head;	// 指向链表的最后一个节点
+	++b;
+	while (b != e)
+	{
+		ListNode* curr = new ListNode(*b);
+		pre->next = curr;
+		pre = pre->next;
+		++b;
+	}
+	return head;
 }
 
 void destroyList(ListNode* head)
@@ -35,7 +51,7 @@ void printList(ListNode* head)
 {
 	while (head != nullptr)
 	{
-		cout << head->value << " ";
+		cout << head->val << " ";
 		head = head->next;
 	}
 }
