@@ -78,6 +78,9 @@
     <ClInclude Include="src\MyList.h">
       <Filter>头文件\Utility</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题05_替换空格.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

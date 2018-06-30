@@ -155,6 +155,7 @@
     <ClInclude Include="src\二叉树先序遍历.h" />
     <ClInclude Include="src\二叉树后序遍历.h" />
     <ClInclude Include="src\只能动态分配与只能静态分配.h" />
+    <ClInclude Include="src\面试题05_替换空格.h" />
     <ClInclude Include="src\面试题25_合并两个有序链表.h" />
     <ClInclude Include="src\手写快排.h" />
     <ClInclude Include="src\智能指针循环引用问题.h" />
