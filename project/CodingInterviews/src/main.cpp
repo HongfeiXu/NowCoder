@@ -1,4 +1,4 @@
-#include "面试题04_二维数组中的查找.h"
+#include "面试题05_替换空格.h"
 
 #include <iostream>
 #include <vector>
@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
-	test();
+	test_v2();
+
 	return 0;
 }
+
