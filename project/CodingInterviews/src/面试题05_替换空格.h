@@ -100,7 +100,7 @@ void ReplaceSpaceV3(char s[], int length)
 
 // ====================²âÊÔ´úÂë================
 
-void test()
+void test1()
 {
 	string input = "We are happy.";
 	string result = ReplaceSpace(input);
@@ -108,9 +108,15 @@ void test()
 	cout << result.size() << endl;
 }
 
-void test_v2()
+void test2()
 {
 	char str[100] = "A B C";
 	ReplaceSpaceV3(str, 100);
 	cout << str << endl;
+}
+
+void driver()
+{
+	test1();
+	test2();
 }
