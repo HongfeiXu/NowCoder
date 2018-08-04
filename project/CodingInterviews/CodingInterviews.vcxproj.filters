@@ -99,6 +99,9 @@
     <ClInclude Include="src\面试题24_反转链表.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题52_两个链表的第一个公共节点.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

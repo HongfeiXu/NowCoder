@@ -170,6 +170,7 @@
     <ClInclude Include="src\面试题03_01_数组中重复的数字.h" />
     <ClInclude Include="src\面试题03_02_不修改数组找出重复的数字.h" />
     <ClInclude Include="src\面试题04_二维数组中的查找.h" />
+    <ClInclude Include="src\面试题52_两个链表的第一个公共节点.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
