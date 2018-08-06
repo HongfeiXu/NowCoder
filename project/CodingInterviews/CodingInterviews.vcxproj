@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BinaryTree.h" />
     <ClInclude Include="src\CPP_Cast.h" />
     <ClInclude Include="src\FindKthToTail.h" />
     <ClInclude Include="src\MyLinkedList.h" />
@@ -170,9 +171,14 @@
     <ClInclude Include="src\面试题03_01_数组中重复的数字.h" />
     <ClInclude Include="src\面试题03_02_不修改数组找出重复的数字.h" />
     <ClInclude Include="src\面试题04_二维数组中的查找.h" />
+    <ClInclude Include="src\面试题26_树的子结构.h" />
+    <ClInclude Include="src\面试题33_二叉搜索树的后序遍历序列.h" />
+    <ClInclude Include="src\面试题34_二叉树中和为某一值的路径.h" />
     <ClInclude Include="src\面试题52_两个链表的第一个公共节点.h" />
+    <ClInclude Include="src\面试题07_重建二叉树.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BinaryTree.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MyList.cpp" />
   </ItemGroup>

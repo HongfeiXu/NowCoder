@@ -19,6 +19,9 @@
     <Filter Include="头文件\雷火盘古2019">
       <UniqueIdentifier>{8c8a90bf-3182-4e9d-9dee-2d44df139bdb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\网易互娱">
+      <UniqueIdentifier>{d5fc6364-4fab-473b-9d53-0ba753f7a110}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md">
@@ -52,6 +55,12 @@
     </ClInclude>
     <ClInclude Include="src\字符串计算.h">
       <Filter>头文件\雷火盘古2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\时钟.h">
+      <Filter>头文件\网易互娱</Filter>
+    </ClInclude>
+    <ClInclude Include="src\会话列表.h">
+      <Filter>头文件\网易互娱</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

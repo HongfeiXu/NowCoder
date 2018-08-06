@@ -102,12 +102,30 @@
     <ClInclude Include="src\面试题52_两个链表的第一个公共节点.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题26_树的子结构.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题07_重建二叉树.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BinaryTree.h">
+      <Filter>头文件\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题33_二叉搜索树的后序遍历序列.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题34_二叉树中和为某一值的路径.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\MyList.cpp">
+      <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BinaryTree.cpp">
       <Filter>源文件\Utility</Filter>
     </ClCompile>
   </ItemGroup>
