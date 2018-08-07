@@ -62,6 +62,9 @@
     <ClInclude Include="src\会话列表.h">
       <Filter>头文件\网易互娱</Filter>
     </ClInclude>
+    <ClInclude Include="src\字符迷阵.h">
+      <Filter>头文件\网易互娱</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp">

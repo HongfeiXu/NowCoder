@@ -152,6 +152,7 @@
     <ClInclude Include="src\StringCode.h" />
     <ClInclude Include="src\会话列表.h" />
     <ClInclude Include="src\字符串计算.h" />
+    <ClInclude Include="src\字符迷阵.h" />
     <ClInclude Include="src\打怪兽.h" />
     <ClInclude Include="src\放小球.h" />
     <ClInclude Include="src\时钟.h" />
