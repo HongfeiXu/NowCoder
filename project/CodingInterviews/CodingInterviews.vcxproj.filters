@@ -117,6 +117,15 @@
     <ClInclude Include="src\面试题34_二叉树中和为某一值的路径.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题12_矩阵中的路径.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题13_机器人的运动范围.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题14_剪绳子.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

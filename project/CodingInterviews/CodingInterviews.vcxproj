@@ -160,6 +160,9 @@
     <ClInclude Include="src\面试题05_拓展.h" />
     <ClInclude Include="src\面试题05_替换空格.h" />
     <ClInclude Include="src\面试题06_从尾到头打印链表.h" />
+    <ClInclude Include="src\面试题12_矩阵中的路径.h" />
+    <ClInclude Include="src\面试题13_机器人的运动范围.h" />
+    <ClInclude Include="src\面试题14_剪绳子.h" />
     <ClInclude Include="src\面试题18_删除链表的节点.h" />
     <ClInclude Include="src\面试题22_链表中导数第k个节点.h" />
     <ClInclude Include="src\面试题24_反转链表.h" />
