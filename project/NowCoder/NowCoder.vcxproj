@@ -150,12 +150,17 @@
     <ClInclude Include="src\PushBox.h" />
     <ClInclude Include="src\PushBox_2.h" />
     <ClInclude Include="src\StringCode.h" />
+    <ClInclude Include="src\个税缴纳.h" />
     <ClInclude Include="src\会话列表.h" />
     <ClInclude Include="src\字符串计算.h" />
     <ClInclude Include="src\字符迷阵.h" />
+    <ClInclude Include="src\密码检查.h" />
     <ClInclude Include="src\打怪兽.h" />
+    <ClInclude Include="src\找字符串.h" />
     <ClInclude Include="src\放小球.h" />
     <ClInclude Include="src\时钟.h" />
+    <ClInclude Include="src\最小高度差.h" />
+    <ClInclude Include="src\电话号码.h" />
     <ClInclude Include="src\等腰三角形.h" />
   </ItemGroup>
   <ItemGroup>

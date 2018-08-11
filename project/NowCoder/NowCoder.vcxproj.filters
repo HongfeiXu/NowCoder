@@ -22,6 +22,12 @@
     <Filter Include="头文件\网易互娱">
       <UniqueIdentifier>{d5fc6364-4fab-473b-9d53-0ba753f7a110}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\网易互娱校招提前批2019">
+      <UniqueIdentifier>{2edca491-1aae-44f4-833c-d50057c3f65d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\网易互联网">
+      <UniqueIdentifier>{ab1d6a52-9b04-49dd-a17d-af6b7186aec1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md">
@@ -64,6 +70,21 @@
     </ClInclude>
     <ClInclude Include="src\字符迷阵.h">
       <Filter>头文件\网易互娱</Filter>
+    </ClInclude>
+    <ClInclude Include="src\个税缴纳.h">
+      <Filter>头文件\网易互娱校招提前批2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\密码检查.h">
+      <Filter>头文件\网易互娱校招提前批2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\电话号码.h">
+      <Filter>头文件\网易互娱校招提前批2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\找字符串.h">
+      <Filter>头文件\网易互联网</Filter>
+    </ClInclude>
+    <ClInclude Include="src\最小高度差.h">
+      <Filter>头文件\网易互联网</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

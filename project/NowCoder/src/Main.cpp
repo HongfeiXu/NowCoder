@@ -1,8 +1,8 @@
-#include "字符迷阵.h"
+#include "最小高度差.h"
 
 int main()
 {
-	Driver();
+	driver();
 
 	return 0;
 }
