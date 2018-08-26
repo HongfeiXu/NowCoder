@@ -19,14 +19,14 @@
     <Filter Include="头文件\雷火盘古2019">
       <UniqueIdentifier>{8c8a90bf-3182-4e9d-9dee-2d44df139bdb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\网易互娱">
-      <UniqueIdentifier>{d5fc6364-4fab-473b-9d53-0ba753f7a110}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\网易互娱校招提前批2019">
-      <UniqueIdentifier>{2edca491-1aae-44f4-833c-d50057c3f65d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\网易互联网">
       <UniqueIdentifier>{ab1d6a52-9b04-49dd-a17d-af6b7186aec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\网易互娱2018">
+      <UniqueIdentifier>{d5fc6364-4fab-473b-9d53-0ba753f7a110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\网易互娱秋招2019">
+      <UniqueIdentifier>{2edca491-1aae-44f4-833c-d50057c3f65d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,28 +63,31 @@
       <Filter>头文件\雷火盘古2019</Filter>
     </ClInclude>
     <ClInclude Include="src\时钟.h">
-      <Filter>头文件\网易互娱</Filter>
+      <Filter>头文件\网易互娱2018</Filter>
     </ClInclude>
     <ClInclude Include="src\会话列表.h">
-      <Filter>头文件\网易互娱</Filter>
+      <Filter>头文件\网易互娱2018</Filter>
     </ClInclude>
     <ClInclude Include="src\字符迷阵.h">
-      <Filter>头文件\网易互娱</Filter>
+      <Filter>头文件\网易互娱2018</Filter>
     </ClInclude>
     <ClInclude Include="src\个税缴纳.h">
-      <Filter>头文件\网易互娱校招提前批2019</Filter>
+      <Filter>头文件\网易互娱秋招2019</Filter>
     </ClInclude>
     <ClInclude Include="src\密码检查.h">
-      <Filter>头文件\网易互娱校招提前批2019</Filter>
-    </ClInclude>
-    <ClInclude Include="src\电话号码.h">
-      <Filter>头文件\网易互娱校招提前批2019</Filter>
+      <Filter>头文件\网易互娱秋招2019</Filter>
     </ClInclude>
     <ClInclude Include="src\找字符串.h">
       <Filter>头文件\网易互联网</Filter>
     </ClInclude>
     <ClInclude Include="src\最小高度差.h">
       <Filter>头文件\网易互联网</Filter>
+    </ClInclude>
+    <ClInclude Include="src\电话号码归属地.h">
+      <Filter>头文件\网易互娱秋招2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\游戏积分.h">
+      <Filter>头文件\网易互娱秋招2019</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
