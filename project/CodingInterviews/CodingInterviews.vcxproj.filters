@@ -126,6 +126,15 @@
     <ClInclude Include="src\面试题14_剪绳子.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\面试题08_二叉树的下一个节点.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题09_用两个栈实现队列.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题09_用两个队列实现一个栈.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
