@@ -28,6 +28,9 @@
     <Filter Include="头文件\网易互娱秋招2019">
       <UniqueIdentifier>{2edca491-1aae-44f4-833c-d50057c3f65d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\其他">
+      <UniqueIdentifier>{1cf8339e-3a31-443e-8571-c98f8a19b56e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md">
@@ -88,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="src\游戏积分.h">
       <Filter>头文件\网易互娱秋招2019</Filter>
+    </ClInclude>
+    <ClInclude Include="src\奖学金.h">
+      <Filter>头文件\其他</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

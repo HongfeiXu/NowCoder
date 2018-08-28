@@ -152,6 +152,7 @@
     <ClInclude Include="src\StringCode.h" />
     <ClInclude Include="src\个税缴纳.h" />
     <ClInclude Include="src\会话列表.h" />
+    <ClInclude Include="src\奖学金.h" />
     <ClInclude Include="src\字符串计算.h" />
     <ClInclude Include="src\字符迷阵.h" />
     <ClInclude Include="src\密码检查.h" />

@@ -2,13 +2,17 @@
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
-//#include "密码检查.h"
-#include "电话号码归属地.h"
+
+#include "奖学金.h"
 
 using namespace std;
 
 int main()
 {
-	solution2();
+	//driver();
+	cout << INT_MAX << endl;
+	cout << LONG_MAX << endl;
+	cout << LLONG_MAX << endl;
+
 	return 0;
 }
