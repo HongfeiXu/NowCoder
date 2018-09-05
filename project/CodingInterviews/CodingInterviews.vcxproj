@@ -146,7 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BinarySearch.h" />
     <ClInclude Include="src\BinaryTree.h" />
+    <ClInclude Include="src\BubbleSort.h" />
     <ClInclude Include="src\CPP_Cast.h" />
     <ClInclude Include="src\FindKthToTail.h" />
     <ClInclude Include="src\MyLinkedList.h" />
@@ -156,6 +158,7 @@
     <ClInclude Include="src\二叉树中序遍历.h" />
     <ClInclude Include="src\二叉树先序遍历.h" />
     <ClInclude Include="src\二叉树后序遍历.h" />
+    <ClInclude Include="src\关于weak_ptr.h" />
     <ClInclude Include="src\只能动态分配与只能静态分配.h" />
     <ClInclude Include="src\面试题05_拓展.h" />
     <ClInclude Include="src\面试题05_替换空格.h" />
@@ -163,6 +166,7 @@
     <ClInclude Include="src\面试题08_二叉树的下一个节点.h" />
     <ClInclude Include="src\面试题09_用两个栈实现队列.h" />
     <ClInclude Include="src\面试题09_用两个队列实现一个栈.h" />
+    <ClInclude Include="src\面试题10_斐波那契数列.h" />
     <ClInclude Include="src\面试题12_矩阵中的路径.h" />
     <ClInclude Include="src\面试题13_机器人的运动范围.h" />
     <ClInclude Include="src\面试题14_剪绳子.h" />

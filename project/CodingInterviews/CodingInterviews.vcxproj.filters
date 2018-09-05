@@ -135,6 +135,18 @@
     <ClInclude Include="src\面试题09_用两个队列实现一个栈.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\关于weak_ptr.h">
+      <Filter>头文件\C++常见问题</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BinarySearch.h">
+      <Filter>头文件\C++常见问题</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BubbleSort.h">
+      <Filter>头文件\C++常见问题</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题10_斐波那契数列.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
