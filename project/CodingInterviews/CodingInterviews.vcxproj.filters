@@ -25,6 +25,12 @@
     <Filter Include="源文件\Utility">
       <UniqueIdentifier>{982dd97e-bc66-48d5-a6c5-507587fe9040}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\设计模式">
+      <UniqueIdentifier>{62b7887e-5d61-4334-b8ec-3407ba0a9da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\设计模式">
+      <UniqueIdentifier>{68ba16e2-7c3c-46d1-922d-1e645597c73d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\FindKthToTail.h">
@@ -147,6 +153,15 @@
     <ClInclude Include="src\面试题10_斐波那契数列.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\单例模式.h">
+      <Filter>头文件\设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="src\抽象工厂模式.h">
+      <Filter>头文件\设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="src\工厂方法模式.h">
+      <Filter>头文件\设计模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -157,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="src\BinaryTree.cpp">
       <Filter>源文件\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\单例模式.cpp">
+      <Filter>源文件\设计模式</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

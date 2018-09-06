@@ -159,7 +159,10 @@
     <ClInclude Include="src\二叉树先序遍历.h" />
     <ClInclude Include="src\二叉树后序遍历.h" />
     <ClInclude Include="src\关于weak_ptr.h" />
+    <ClInclude Include="src\单例模式.h" />
     <ClInclude Include="src\只能动态分配与只能静态分配.h" />
+    <ClInclude Include="src\工厂方法模式.h" />
+    <ClInclude Include="src\抽象工厂模式.h" />
     <ClInclude Include="src\面试题05_拓展.h" />
     <ClInclude Include="src\面试题05_替换空格.h" />
     <ClInclude Include="src\面试题06_从尾到头打印链表.h" />
@@ -191,6 +194,7 @@
     <ClCompile Include="src\BinaryTree.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MyList.cpp" />
+    <ClCompile Include="src\单例模式.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.md" />
