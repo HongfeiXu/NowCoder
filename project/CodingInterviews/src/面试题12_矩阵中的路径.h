@@ -4,74 +4,71 @@
 
 面试题12：矩阵中的路径
 
+题目描述
+请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。
+路径可以从矩阵中的任意一个格子开始，每一步可以在矩阵中向左，向右，向上，向下移动一个格子。
+如果一条路径经过了矩阵中的某一个格子，则之后不能再次进入这个格子。 
+例如 a b c e s f c s a d e e 这样的3 X 4 矩阵中包含一条字符串"bcced"的路径，
+但是矩阵中不包含"abcb"路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入该格子。
+
+Approach:
+
+Backtracking
+
 */
 
 #include <iostream>
 #include <vector>
 #include <string>
-#include <cstdio>
 
 using namespace std;
 
-// 判断从 (row, col) 字符出发能否构成目标字符串 s
-bool hasPath(vector<vector<char>>& mat, int rows, int cols, int row, int col, string &s, int& index, vector<vector<bool>>& visited)
-{
-	// 前面的s.length()个字符已经匹配
-	if (s.length() == index)
-		return true;
-
-	// 越界，则直接返回 false
-	if (row < 0 || row >= rows || col < 0 || col >= cols)
-		return false;
-
-	// 当前字符不符合或者已经被访问过，返回 false
-	if (mat[row][col] != s[index] || visited[row][col])
-		return false;
-
-	// 标记当前字符为已经访问
-	visited[row][col] = true;
-	bool result = false;
-	++index;
-	result = hasPath(mat, rows, cols, row - 1, col, s, index, visited) 
-		|| hasPath(mat, rows, cols, row + 1, col, s, index, visited)
-		|| hasPath(mat, rows, cols, row, col - 1, s, index, visited)
-		|| hasPath(mat, rows, cols, row, col + 1, s, index, visited);
-
-	// （递归）返回上一层的时候，标记为未访问
-	visited[row][col] = false;
-	--index;
-
-	return result;
-}
-
-bool hasPath(char* matrix, int rows, int cols, char* str)
-{
-	if (matrix == nullptr || rows < 1 || cols < 1 ||str == nullptr)
-		return false;
-
-	vector<vector<char>> mat(rows, vector<char>(cols));
-	for (int i = 0; i < rows; ++i)
+class Solution {
+public:
+	bool hasPath(char* matrix, int rows, int cols, char* str)
 	{
-		for (int j = 0; j < cols; ++j)
+		bool* visited = new bool[rows * cols];
+		memset(visited, 0, rows*cols);
+		for (int i = 0; i < rows; ++i)
 		{
-			mat[i][j] = matrix[i * cols + j];
+			for (int j = 0; j < cols; ++j)
+			{
+				if (hasPath(matrix, rows, cols, i, j, str, 0, visited))
+				{
+					return true;
+				}
+			}
 		}
+		return false;
 	}
 
-	string s(str);
-	vector<vector<bool>> visited(rows, vector<bool>(cols, false));
-	int index = 0;
-
-	for (int i = 0; i < rows; ++i)
+	bool hasPath(char* matrix, int rows, int cols, int i, int j, char* str, int k, bool* visited)
 	{
-		for (int j = 0; j < cols; ++j)
-		{
-			if (hasPath(mat, rows, cols, i, j, s, index, visited))
-				return true;
-		}
+		if (k == strlen(str))
+			return true;
+
+		// 越界判断
+		if (i < 0 || i > rows || j < 0 || j > cols)
+			return false;
+
+		// 字符不同，或者已经访问过
+		if (matrix[i * cols + j] != str[k] || visited[i * cols + j])
+			return false;
+
+		// 将当前位置标记为已访问，避免重复经过
+		visited[i * cols + j] = true;
+		bool result = false;
+		result = hasPath(matrix, rows, cols, i - 1, j, str, k + 1, visited)
+			|| hasPath(matrix, rows, cols, i + 1, j, str, k + 1, visited)
+			|| hasPath(matrix, rows, cols, i, j - 1, str, k + 1, visited)
+			|| hasPath(matrix, rows, cols, i, j + 1, str, k + 1, visited);
+
+		// (递归)返回上一层时，将当前位置标记为未访问
+		visited[i * cols + j] = false;
+
+		return result;
 	}
-	return false;
-}
+};
 
 // ====================测试代码====================
 void Test(char* testName, char* matrix, int rows, int cols, char* str, bool expected)
@@ -79,7 +76,8 @@ void Test(char* testName, char* matrix, int rows, int cols, char* str, bool expe
 	if (testName != nullptr)
 		printf("%s begins: ", testName);
 
-	if (hasPath(matrix, rows, cols, str) == expected)
+	Solution solu;
+	if (solu.hasPath(matrix, rows, cols, str) == expected)
 		printf("Passed.\n");
 	else
 		printf("FAILED.\n");

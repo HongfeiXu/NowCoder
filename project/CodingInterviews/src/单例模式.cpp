@@ -49,14 +49,14 @@ Singleton *Singleton::GetInstance()
 // ×ÊÔ´ÊÍ·Å
 Singleton::GC Singleton::GC::gc;
 
-void test0()
-{
-	Singleton* a = Singleton::GetInstance();
-	Singleton* b = Singleton::GetInstance();
-	cout << (a == b) << endl;
-}
-
-void driver()
-{
-	test0();
-}
+//void test0()
+//{
+//	Singleton* a = Singleton::GetInstance();
+//	Singleton* b = Singleton::GetInstance();
+//	cout << (a == b) << endl;
+//}
+//
+//void driver()
+//{
+//	test0();
+//}

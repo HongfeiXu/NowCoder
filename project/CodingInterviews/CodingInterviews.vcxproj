@@ -159,9 +159,9 @@
     <ClInclude Include="src\二叉树先序遍历.h" />
     <ClInclude Include="src\二叉树后序遍历.h" />
     <ClInclude Include="src\关于weak_ptr.h" />
-    <ClInclude Include="src\单例模式.h" />
     <ClInclude Include="src\只能动态分配与只能静态分配.h" />
     <ClInclude Include="src\工厂方法模式.h" />
+    <ClInclude Include="src\手写归并排序.h" />
     <ClInclude Include="src\抽象工厂模式.h" />
     <ClInclude Include="src\面试题05_拓展.h" />
     <ClInclude Include="src\面试题05_替换空格.h" />
@@ -170,9 +170,11 @@
     <ClInclude Include="src\面试题09_用两个栈实现队列.h" />
     <ClInclude Include="src\面试题09_用两个队列实现一个栈.h" />
     <ClInclude Include="src\面试题10_斐波那契数列.h" />
+    <ClInclude Include="src\面试题11_旋转数组的最小数字.h" />
     <ClInclude Include="src\面试题12_矩阵中的路径.h" />
     <ClInclude Include="src\面试题13_机器人的运动范围.h" />
     <ClInclude Include="src\面试题14_剪绳子.h" />
+    <ClInclude Include="src\面试题15_二进制中1的个数.h" />
     <ClInclude Include="src\面试题18_删除链表的节点.h" />
     <ClInclude Include="src\面试题22_链表中导数第k个节点.h" />
     <ClInclude Include="src\面试题24_反转链表.h" />
@@ -194,7 +196,6 @@
     <ClCompile Include="src\BinaryTree.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MyList.cpp" />
-    <ClCompile Include="src\单例模式.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.md" />

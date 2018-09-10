@@ -153,14 +153,20 @@
     <ClInclude Include="src\面试题10_斐波那契数列.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\单例模式.h">
-      <Filter>头文件\设计模式</Filter>
-    </ClInclude>
     <ClInclude Include="src\抽象工厂模式.h">
       <Filter>头文件\设计模式</Filter>
     </ClInclude>
     <ClInclude Include="src\工厂方法模式.h">
       <Filter>头文件\设计模式</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题11_旋转数组的最小数字.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\面试题15_二进制中1的个数.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\手写归并排序.h">
+      <Filter>头文件\C++常见问题</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -172,9 +178,6 @@
     </ClCompile>
     <ClCompile Include="src\BinaryTree.cpp">
       <Filter>源文件\Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="src\单例模式.cpp">
-      <Filter>源文件\设计模式</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
