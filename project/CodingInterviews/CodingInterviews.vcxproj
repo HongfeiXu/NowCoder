@@ -175,6 +175,7 @@
     <ClInclude Include="src\面试题13_机器人的运动范围.h" />
     <ClInclude Include="src\面试题14_剪绳子.h" />
     <ClInclude Include="src\面试题15_二进制中1的个数.h" />
+    <ClInclude Include="src\面试题16_数值的整数次方.h" />
     <ClInclude Include="src\面试题18_删除链表的节点.h" />
     <ClInclude Include="src\面试题22_链表中导数第k个节点.h" />
     <ClInclude Include="src\面试题24_反转链表.h" />
@@ -191,6 +192,8 @@
     <ClInclude Include="src\面试题34_二叉树中和为某一值的路径.h" />
     <ClInclude Include="src\面试题52_两个链表的第一个公共节点.h" />
     <ClInclude Include="src\面试题07_重建二叉树.h" />
+    <ClInclude Include="src\面试题67_把字符串转换成整数.h" />
+    <ClInclude Include="src\面试题68_树中两个节点的最低公共祖先.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BinaryTree.cpp" />

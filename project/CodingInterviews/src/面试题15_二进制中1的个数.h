@@ -1,11 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <bitset>
-#include <string>
-
-using namespace std;
-
 /*
 
 面试题15：二进制中的1的个数
@@ -14,6 +8,12 @@ using namespace std;
 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
 
 */
+
+#include <iostream>
+#include <bitset>
+#include <string>
+
+using namespace std;
 
 class Solution {
 public:
