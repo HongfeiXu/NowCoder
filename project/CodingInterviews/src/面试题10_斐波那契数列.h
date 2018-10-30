@@ -58,7 +58,24 @@ void test0()
 	std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t0).count() << "ms\n";
 }
 
+void test1()
+{
+	std::cout << std::hex << LLONG_MAX << std::endl;
+
+	int validNumber = 0;
+	for (int i = 0; i < 100; ++i)
+	{
+		if (FibonacciDP(i) < 0)
+		{
+			validNumber = i - 1;
+			break;
+		}
+	}
+	std::cout << std::dec << "long long 类型支持的最大可求的是 Fibonacci(" << validNumber << ") = " << FibonacciDP(validNumber) << std::endl;
+}
+
 void driver()
 {
 	test0();
+	//test1();
 }
